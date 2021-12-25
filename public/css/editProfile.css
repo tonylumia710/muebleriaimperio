@@ -1,0 +1,305 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    border-color: black;
+    background: grey;
+    border-radius: 10px;
+    margin: o auto;
+    width: 100%;
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 1rem;
+}
+.form-container h2 {
+    color: #d9d9d9;
+}
+
+/* form input */
+
+.input-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    width: 100%;
+    justify-content: center;
+
+}
+span.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin: 5px auto;
+}
+
+input.input-style {
+    border:  none;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+input.input-style::placeholder {
+    color: lightgray;
+}
+.input-file-container {
+    background-color: white;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-top: 20px;
+
+}
+select.input-select {
+    border: none;
+    border-radius: 5px;
+    width: 10.5rem;
+    padding: 0.5rem;
+}
+
+input.input-style:focus,
+select.input-select:focus {
+    box-shadow: 0 0 6px white;
+    outline: none;
+}
+
+label {
+    font-size: 1rem;
+    margin-right: 5%;
+    align-self: center;
+    color: white;
+}
+
+/*botones*/
+
+.button-container, .btn-reset, .btn-edit {
+    align-items: center; 
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, rgba(255,255,255,0.8)0%, rgba(218, 197, 15, 0.5) 50%);
+    color: rgb(75,75,75);
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+.btn-submit:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(218, 197, 15, 0.5) 50%);
+}
+.btn-reset {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  #d4af37 50%);
+    color: rgb(8 1 1);
+    font-weight: bold;
+}
+
+.btn-reset:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(39, 151, 255, 0.5) 50%);
+}
+.btn-edit {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  #d4af37 50%);
+    color: rgb(8 1 1);
+    font-weight: bold;
+}
+
+.btn-edit:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(218, 197, 15, 0.5) 50%);
+}
+.button-container, .btn-reset, .btn-cancelar {
+    align-items: center; 
+    text-align: center;
+    padding: 9Px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+    font-size: 13px;
+}
+.btn-cancelar {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  #d4af37 50%);
+    color: rgb(8 1 1);
+    font-weight: bold;
+}
+
+.btn-cancelar:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(218, 197, 15, 0.5) 50%);
+}
+.button-container, .btn-reset, .btn-delete {
+    align-items: center; 
+    text-align: center;
+    padding: 9Px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+    font-size: 13px;
+}
+.btn-delete {
+    background:  linear-gradient(45deg, rgba(255,255,255,1) 0%,  #d4af37 50%);
+    color: rgb(8 1 1);
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    color: rgb(172, 172, 172);
+    box-shadow: -5px -5px 10px rgb(255, 255, 255, 0.7);
+    background: linear-gradient(285deg, rgba(255,255,255,0.5) 0%,  rgba(218, 197, 15, 0.5) 50%);
+}
+
+/*check*/
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+.check label {
+    margin-right: 10px;
+}
+
+.check input[type = "chekbox"] {
+    position: relative;
+    bottom: -3px;
+}
+/*media queries*/
+/* tablet*/
+
+@media screen and (min-width: 475px) {
+    .input-container,
+    .button-container{
+        width: 80%;
+
+    }
+    .input-file-container {
+     max-width: 300px;    }
+    .form-container {
+    width: 20rem;
+    }
+
+}
+
+
+.profile .form-container {
+    width: 100%;
+
+}
+.profile-form {
+    display: flex;
+    flex-direction: column;
+}
+.profile-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.profile-box h3 {
+    margin-bottom: 1rem;
+    color: #d9d9d9;
+}
+
+.profile .button-container {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+}
+
+.profile .avatar {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.profile .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 475px) {
+   
+    .profile .form-container {
+        width: 90%;
+        margin: 5% 5%;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+  
+    .profile .form-container {
+        width: 90%;
+    }
+
+}
+
+
+/* Desktop */
+
+
+@media screen and (min-width: 992px) {
+
+    .profile .input-file-container {
+        max-width: 300px;
+    }
+  
+    .profile .form-container {
+        width: 90%;
+    }
+
+    .profile-form {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile .button-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 20px;
+        justify-content: center;
+    }
+
+}
+
+.profile-box .input-flex {
+    display: flex;
+    align-content: center;
+}

@@ -1,0 +1,109 @@
+.cart-page {
+  margin: 80px 120px;
+}
+
+table.cart-container {
+  width: 100%;
+  border-collapse: collapse;
+  height: fit-content;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.th-cart {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: black;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td button.remove-product-cart {
+  color: white;
+  background: red;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 9px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+td button.detail-product-cart {
+  color: white;
+  background: black;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 9px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+td img {
+  object-fit: contain;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price table {
+  border-top: 3px solid #D4AF37;
+  width: 100%;
+  max-width: 400px;
+}
+
+tr.td-bold {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.button-confirm {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.button-clean {
+  margin-left: 60px;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+.button-confirm button,
+.button-clean button {
+  background-color: black;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+}
+
+.button-confirm button {
+  padding: 10px;
+  width: 34%;
+  cursor: pointer;
+}
+
+.button-clean button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+h2.no-products {
+  margin-bottom: 20%;
+}

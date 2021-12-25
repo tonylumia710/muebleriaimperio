@@ -1,0 +1,91 @@
+@import url('variables.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('home.css');
+@import url('carousel.css');
+@import url('password.css');
+@import url('login.css');
+@import url('carrito.css');
+@import url('register.css');
+@import url('productDetail.css');
+@import url('adminCreate.css');
+@import url('adminEdit.css');
+@import url('editProfile.css');
+@import url('adminHeader.css');
+@import url('adminProducts.css');
+@import url('profile.css');
+@import url('sliderofer.css');
+@import url('cards.css');
+@import url('contacto.css');
+@import url('comprar.css');
+@import url('modalWindow.css');
+@import url('botonSubir.css');
+@import url('success.css');
+
+
+.dark-mode-button{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    background: black;
+    border: solid goldenrod 3px;
+    color: white;
+}
+
+html.dark-mode{
+    filter: invert(100%);
+}
+
+html.dark-mode img{
+    filter: invert(100%);
+}
+
+html.dark-mode header{
+    filter: invert(100%);
+}
+
+html.dark-mode footer{
+    filter: invert(100%);
+}
+html.dark-mode .logo {
+    filter: invert(100%);
+}
+
+html.dark-mode .logofooter{
+    filter: invert(100%);
+}
+
+html.dark-mode .butprod{
+    filter: invert(100%);
+}
+
+
+html.dark-mode .ir-arriba{
+    filter: invert(100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.validationError{
+    position: absolute;
+    color: rgb(8, 1, 1);
+    line-height: 63px;
+    font-size: 13px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .comoenvios{
+        margin: 5% 15%;
+    }
+}

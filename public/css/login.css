@@ -1,0 +1,123 @@
+.login {
+    background-color: rgba(255, 255, 255, 0.5);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    
+}
+.login h1 {
+    margin-top: 40px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.login .card {
+    position        : relative;
+    width           : 420px;
+    height          : fit-content;
+    box-shadow: 0 0 10px var(--bordes);
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    border-radius   : 10px;
+    background: linear-gradient(
+        150deg
+        ,#0e0d0d, #d4af37, rgb(59, 47, 49));
+    animation: BgGradient 5s ease infinite;
+    margin: 50px 0;
+    border: 1px solid #222222
+}
+
+.login .card__input {
+    width : 260px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #222222;
+}
+
+.login .card__enlace {
+    position   : absolute;
+    bottom     : 160px;
+    display    : inline-block;
+    width      : 100%;
+    margin-left: 30%;
+    font-size: 15px;
+}
+
+.login .card__text {
+
+    transition: all 750ms ease;
+    
+}
+
+.login .card__text:hover {
+    text-shadow: 1px 1px opx black;
+    color        : rgb(233, 217, 77);
+}
+
+.login .button:hover {
+    border: 2px solid #d4af37;
+    background: black;
+}
+
+.login .button--positionRegister {
+    position: absolute;
+    bottom  : 77px;
+    right: 15%;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.login .button--positionIngresar {
+    bottom  : 35px;
+    text-align: center;
+    width: 70%;
+    left: 15%;
+    border-radius: 5px;
+    color: #d9d9d9;
+    outline: none;
+    border: 2px solid #222222;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.login .email--absolute {
+    bottom: 260px;
+    left  : 15%;
+}
+
+.login .contraseña--absolute {
+    bottom: 193px;
+    left  : 15%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .login .img {
+        width: 35%;
+        margin: auto;
+    }
+
+    .login .card {
+        margin: 50px 20px;
+    }
+
+    .login .card__input {
+        width: 80%;
+    }
+}
+.login label.recordar {
+    flex-direction: row;
+
+}
+.login.ckeck {
+  left: 20px;
+}
+
+.login small {
+    color: red;
+}
+
+form.card a {
+    margin-bottom: 30px;
+}
